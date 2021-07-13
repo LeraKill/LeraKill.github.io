@@ -1,0 +1,47 @@
+.page {
+	padding: 0px;
+}
+.article {
+	max-width: 700px;
+	padding: 0 10px 30px;
+	margin: 0 auto;
+}
+
+.article__title {
+	font-size: 34px;
+	font-weight: 500;
+	line-height: 144%;
+	margin: 0px 0px 30px 0px;
+}
+.acticle__info {
+	display: flex;
+	align-items: center;
+	margin: 0 0 23px 0;
+}
+.article__year {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 900;
+	background-color: #ff7c7c;
+	border-radius: 16px;
+	height: 25px;
+	padding: 0 10px;
+	margin-right: 17px;
+}
+.article__category {
+	font-size: 20px;
+	line-height: 145%;
+}
+.article__text {
+	margin: 0 0 20px 0;
+}
+.article__image {
+	max-width: 100%;
+	margin: 0 0 20px 0;
+}
+.article__image:last-child {
+	margin: 0;
+}

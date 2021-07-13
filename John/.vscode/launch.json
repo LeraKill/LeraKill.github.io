@@ -1,0 +1,17 @@
+{
+	"configurations": [
+		{
+			"name": "Launch Chrome",
+			"request": "launch",
+			"type": "pwa-chrome",
+			"url": "http://localhost:8080",
+			"webRoot": "${workspaceFolder}"
+		},
+		{
+			"type": "pwa-chrome",
+			"name": "http://console.log('HI');",
+			"request": "launch",
+			"url": "http://console.log('HI');"
+		}
+	]
+}
