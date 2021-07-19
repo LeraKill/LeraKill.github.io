@@ -9,8 +9,7 @@ body {
 	min-width: 1035px;
 }
 .header-page {
-	background: url(img/wheat-back.jpg) no-repeat;
-	background-position: bottom;
+	background-color: red;
 	background-size: cover;
 }
 .container {
