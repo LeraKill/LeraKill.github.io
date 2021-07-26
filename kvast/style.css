@@ -55,6 +55,7 @@ body {
 .main-nav a:hover {
 	color: #ffcb78;
 	border-color: #fff;
+	transition: color 0.3s linear, border-color 0.3s linear;
 }
 .main-nav a:active {
 	color: rgba(255, 203, 120, 0.3);
@@ -177,6 +178,7 @@ body {
 .news__item__link_more:hover {
 	color: #6a3900;
 	border-color: #6a3900;
+	transition: color 0.3s linear, border-color 0.3s linear;
 }
 .news__item__link_more:active {
 	color: rgba(131, 71, 0, 0.3);
@@ -190,6 +192,7 @@ body {
 .news__item__link_buy:hover {
 	background-color: #6a3900;
 	border-color: #6a3900;
+	transition: background-color 0.3s linear, border-color 0.3s linear;
 }
 .news__item__link_buy:active {
 	background-color: #6a3900;
@@ -300,6 +303,7 @@ body {
 }
 .history__source a:hover {
 	color: #774e26;
+	transition: color 0.3s linear;
 }
 .history__source a:active {
 	color: #d9ccbd;
@@ -380,6 +384,7 @@ body {
 	color: #fff;
 	border-color: #a5a097;
 	background-color: #a5a097;
+	transition: color 0.3s linear, border-color 0.3s linear, background-color 0.3s linear;
 }
 .press__link:active {
 	color: rgba(255, 255, 255, 0.3);
@@ -508,6 +513,7 @@ body {
 .order-form textarea:hover {
 	background-color: #d9ad66;
 	border-color: #d9ad66;
+	transition: background-color 0.3s linear, border-color 0.3s linear;
 }
 .order-form input[type="text"]:focus,
 .order-form select:focus,
@@ -556,11 +562,13 @@ body {
 /* стили при наведении курсора на checkbox */
 .custom-checkbox:not(:disabled):not(:checked) + label:hover::before {
 	border-color: #834700;
+	transition: border-color 0.3s linear;
 }
 /* стили для активного состояния чекбокса (при нажатии на него) */
 .custom-checkbox:not(:disabled):active + label::before {
 	background-color: #834700;
 	border-color: #834700;
+	transition: background-color 0.3s linear, border-color 0.3s linear;
 }
 /* стили для чекбокса, находящегося в фокусе */
 .custom-checkbox:focus + label::before {
@@ -582,6 +590,7 @@ body {
 .order-form-btn:hover {
 	background-color: #6a3900;
 	border-color: #6a3900;
+	transition: background-color 0.3s linear, border-color 0.3s linear;
 }
 .order-form-btn:active {
 	background-color: #6a3900;
@@ -638,6 +647,7 @@ body {
 }
 .social__btn:hover {
 	border-color: #ffcb78;
+	transition: border-color 0.3s linear;
 }
 .social__btn:active {
 	opacity: 0.5;
