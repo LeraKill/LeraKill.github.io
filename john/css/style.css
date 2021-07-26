@@ -40,6 +40,7 @@ body {
 }
 .menu__link:hover {
 	color: #ff6464;
+	transition: color 0.2s linear;
 }
 .menu__active {
 	color: #ff6464;
@@ -99,6 +100,7 @@ body {
 }
 .btn:hover {
 	background-color: #b92626;
+	transition: background-color 0.3s linear;
 }
 .hello__avatar {
 	flex: 0 0 243px; /*возможность уменьшаться, возможность увеличиваться и базовая ширина - flex basis*/
@@ -161,6 +163,7 @@ body {
 }
 .recent-post__title:hover {
 	color: #ff6464;
+	transition: color 0.3s linear;
 }
 .recent-post__info {
 	font-size: 18px;
@@ -218,6 +221,7 @@ body {
 }
 .works__title:hover {
 	color: #ff6464;
+	transition: color 0.3s linear;
 }
 .works__info {
 	display: flex;
@@ -265,6 +269,7 @@ body {
 }
 .social__item:hover {
 	color: #ff6464;
+	transition: color 0.3s linear;
 }
 ._icon-fb {
 }

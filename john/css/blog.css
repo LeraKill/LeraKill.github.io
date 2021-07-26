@@ -17,6 +17,7 @@
 }
 .blog__article_name:hover {
 	color: #ff6464;
+	transition: color 0.3s linear;
 }
 .blog__items {
 }
