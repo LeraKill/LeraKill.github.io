@@ -586,6 +586,7 @@ body {
 	background-color: #834700;
 	color: #fff;
 	width: 200px;
+	cursor: pointer;
 }
 .order-form-btn:hover {
 	background-color: #6a3900;
