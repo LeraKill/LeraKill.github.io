@@ -1,0 +1,96 @@
+.printers__info {
+	background-image: url(../images/background.jpg);
+	height: 169px;
+	background-repeat: no-repeat;
+}
+._container {
+}
+.printers__info__title {
+}
+.title {
+	color: #fff;
+	font-size: 32px;
+	font-weight: 500;
+	line-height: 118%;
+	padding: 40px 0px 0px 0px;
+}
+
+.printers__info__text {
+	color: #fff;
+	padding-top: 10px;
+}
+
+.list__table {
+	font-size: 16px;
+	font-weight: 400;
+	border-spacing: 0;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	width: 100%;
+}
+
+.list__items {
+}
+.list__items:hover {
+	background-color: #06be01;
+	overflow: hidden;
+	border-radius: 3px;
+	color: #fff;
+}
+.list__item {
+	padding-left: 10px;
+	padding-right: 200px;
+}
+.list__price {
+	text-align: right;
+	padding-right: 10px;
+}
+.list__item,
+.list__price {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.footer__printers {
+	background-color: #000;
+	margin-top: 90px;
+	font-size: 14px;
+	font-weight: 400;
+}
+.footer__printers__container {
+	padding: 30px 0 0 0;
+	display: flex;
+}
+
+.footer__printers__year {
+	color: #fff;
+	margin-right: 148px;
+}
+.footer__printers__category {
+	width: 125px;
+	margin-right: 220px;
+	margin-bottom: 53px;
+}
+.printers__link {
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	line-height: 17px;
+}
+
+.printers__link:hover {
+	color: #06be01;
+}
+.footer__printers__info {
+}
+
+.footer__printers__text {
+	color: #fff;
+}
+.footer__printers__social {
+}
+.social__item {
+}
+._icon-vk {
+}
+._icon-insta {
+}
