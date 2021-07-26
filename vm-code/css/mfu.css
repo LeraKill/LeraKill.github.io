@@ -36,6 +36,7 @@
 	overflow: hidden;
 	border-radius: 3px;
 	color: #fff;
+	transition: color 0.1s linear, background-color 0.2s linear;
 }
 .list__item {
 	padding-left: 10px;
@@ -79,6 +80,7 @@
 
 .printers__link:hover {
 	color: #06be01;
+	transition: color 0.3s linear;
 }
 .footer__printers__info {
 }
