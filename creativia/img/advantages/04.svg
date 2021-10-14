@@ -1,0 +1,15 @@
+<svg id="shape6" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="89" height="77" viewBox="0 0 89 77">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #262626;
+        stroke-linejoin: round;
+        stroke-width: 1px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M1128,1642l-22-38,22-38h44l22,38-22,38h-44Z" transform="translate(-1105.5 -1565.5)"/>
+  <image id="_1" data-name="1" x="29.5" y="19.5" width="31" height="39" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAnCAYAAAD3h5P5AAABkUlEQVRYhdXWu0vDUBTH8a/1hW98rIJFnBwUnB0EEVxdlAouDjoqiBT0/xAnFUUHcXYrFhFxdRIcSsHNBxYRFMTKgQRK6G1yH0nwB2dIQu7n3NxwuRimDTgEDoA+00FsMgdUgWdgM40GHrwGpK6BsSTx/Rpc6gtYiPpyxhIvB67bgQtgPQlc9bPtATnLsUPzGPjswRqNC94JgaVu44BXIsB+TbuE8xqw1KkLNOMNpANLvQCtNvAIcG8A+zVpCo8DrxZwVbXxtITAWeAO6DLt3EtvvZuNNhl5VnAAS3518Q1vrV3kSXeMsuU6+/UN9OjAE45gqRPdWS85xLMqRLXmnbrdKrIKlHRfyjmY8bZpxzOWcKTDhCqDwI8B+gbM2sB+bjRh2QmHXcCSNQ343BXqRw6DHxHgK9ewn+UQ+BPojwvH26FU+FGcsJ9LBZ63GTTquX0eOKtzf8AG181WYOaFJHHJFFCsaWAo6Qbwzu7vwDHQnEYD3cAi0JEG/n/TBOw2Om3EmJLg8semEtlkKqnIUPkDTQIWrwEbs/kAAAAASUVORK5CYII="/>
+</svg>

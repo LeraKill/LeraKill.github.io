@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="88" height="76" viewBox="0 0 88 76">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="805" y="1566" width="88" height="76" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#818181"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+      <feFlood result="flood-2" flood-color="#ff0036"/>
+      <feComposite result="composite-2" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend-2" in2="blend"/>
+    </filter>
+  </defs>
+  <path class="cls-1" d="M827,1642l-22-38,22-38h44l22,38-22,38H827Z" transform="translate(-805 -1566)"/>
+  <image id="_2" data-name="2" x="31" y="24" width="26" height="31" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAfCAYAAAD5h919AAAA4klEQVRIie2WMQ4BQRSGP0KnENHo3IFzqF2DwhW4gV6ldg8nsLVKUGyWZBNPnrwVEWFHZkQxf/JnZ5P5/29mqoeIqGcikol/aedUGQoZBwA8a1QRkS3QAS7ACtjjRy1gAFSBrd4oNXpiz+jTiXWnSsvt/GdPN3lU0ZkrSOynFgBUdEo1QPlLRVAERVAERVAE/RtI3uz7VvfOn4Ee54QuMAF2H8IN+6Yf9rWt8yad6w5A87sDl9ZRn67uENgAfXPikKsr6OQQWAJrs67LKlPQ3CEwBHpmXZfVvBh/FwEH/IWIcAWHn6Y8JCijzQAAAABJRU5ErkJggg=="/>
+</svg>
