@@ -253,6 +253,7 @@ body {
 	height: 75px;
 	background-image: url("img/icons.png");
 	background-repeat: no-repeat;
+	
 }
 .advantages__one::before {
 	background-position: -6px 0px;
