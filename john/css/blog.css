@@ -2,9 +2,13 @@
 }
 .page__container {
 }
-
-.title {
-	margin: -90px 0px 55px 0px;
+.blog__title {
+	margin: 0px 0px 55px 0px;
+}
+@media (max-width: 430px) {
+	.blog__title {
+		margin: 100px 0px 55px 0px;
+	}
 }
 .blog__article_name {
 	font-size: 30px;
@@ -17,7 +21,6 @@
 }
 .blog__article_name:hover {
 	color: #ff6464;
-	transition: color 0.3s linear;
 }
 .blog__items {
 }
@@ -46,4 +49,16 @@
 .blog__text {
 }
 .text {
+}
+@media (max-width: 430px) {
+	.blog__title {
+		margin: 40px 0px 25px 0px;
+		font-size: 30px;
+	}
+	.blog__article_name {
+		font-size: 26px;
+	}
+	.blog__info {
+		font-size: 16px;
+	}
 }
