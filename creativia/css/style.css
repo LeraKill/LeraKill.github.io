@@ -390,6 +390,16 @@ body._lock {
 	font-family: "Raleway", sans-serif;
 	font-size: 20px;
 	font-weight: normal;
+	transition: all 0.3s ease 0s;
+}
+.link:hover {
+	background-color: #ff0036;
+}
+.description__link:first-child {
+	margin-right: 30px;
+}
+.description__link {
+	background-color: black;
 }
 @media (max-width: 450px) {
 	.description__links {
@@ -404,18 +414,6 @@ body._lock {
 	}
 }
 
-.link:hover {
-	font-size: 22px;
-	transition: all 0.3sec linear;
-}
-.description__link-features {
-	margin-right: 30px;
-	background-color: #ff0036;
-}
-
-.description__link-psd {
-	background-color: black;
-}
 .description__image {
 	position: absolute;
 	width: 100%;
