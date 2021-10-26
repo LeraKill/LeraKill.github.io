@@ -26,6 +26,30 @@ if (iconMenu) {
 	})
 }
 
+const menuLinks = document.querySelectorAll('a[data-goto]');
+if (menuLinks.length > 0) {
+	menuLinks.forEach(menuLink => {
+		menuLink.addEventListener('click', OnMenuLinkClick);
+	});
+	function OnMenuLinkClick(e) {
+		const menuLink = e.target;
+		if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
+			e.preventDefault();
+			const gotoBlock = document.querySelector(menuLink.dataset.goto);
+			const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset - document.querySelector('header').offsetHeight;
+			window.scrollTo({
+				top: gotoBlockValue,
+				behavior: 'smooth'
+			});
+			if (iconMenu.classList.contains('_active')) {
+				document.body.classList.remove('_lock');
+				iconMenu.classList.remove('_active');
+				menuBody.classList.remove('_active');
+			}
+		}
+	}
+}
+
 let popup = document.querySelector('.popup');
 let popupBody = document.querySelector('.popup__body');
 let popupContent = document.querySelector('.popup__content');
@@ -57,36 +81,43 @@ document.addEventListener('click', (e) => {
 });
 
 
+
 document.addEventListener('DOMContentLoaded', function () {
 	const form = document.getElementById('form');
+	const formBody = document.querySelector('.popup__content');
 	form.addEventListener('submit', formSend);
 
 	async function formSend(e) {
 		e.preventDefault();
-		let error = formValidate(form);
+		let isFormValid = formValidate(form);
 
 		let formData = new FormData(form);
 
-		if (error == false) {
-			form.classList.add('_sending');
-			let response = await fetch('sendmail.php', {
-				method: 'POST',
+		if (isFormValid === true) {
+			formBody.classList.add('_sending');
+			let url = '';
+			let response = await fetch(url, {
+				method: "POST",
+				headers: {
+					'Content-Type': 'application/json;charset=utf-8'
+				},
 				body: formData,
 			});
+
 			if (response.ok) { // если ок отправлено - то сюда видимо попап спасибо за отправку
 				let result = await response.json();
 				alert(result.message);
 				form.reset();
-				form.classList.remove('_sending');
+				formBody.classList.remove('_sending');
 			} else {
 				document.querySelector('.error').innerHTML += ' <span class="validation-error">Произошла ошибка при отправке формы</span>';
-				form.classList.remove('_sending');
+				formBody.classList.remove('_sending');
 			}
 		}
 	}
 
 	function formValidate(form) {
-		let error = false;
+		let isFormValid = true;
 		const errors = document.getElementsByClassName('validation-error');
 		while (errors.length > 0) {
 			errors[0].parentNode.removeChild(errors[0]);
@@ -94,27 +125,24 @@ document.addEventListener('DOMContentLoaded', function () {
 		const nameField = document.getElementById('name');
 		if (!nameField.value) {
 			document.querySelector('.error-name').innerHTML += ' <span class="validation-error">Enter your name</span>';
-			error = true;
+			isFormValid = false;
 		}
 		const emailField = document.getElementById('email');
 		if (!emailField.value) {
 			document.querySelector('.error-email').innerHTML += '<span class="validation-error">Enter your email</span>';
-			error = true;
+			isFormValid = false;
 		} else {
-			if (emailTest(input)) {
+			const re = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+			if (!re.test(String(emailField.value).toLowerCase())) {
 				document.querySelector('.error-email').innerHTML += ' <span class="validation-error">Incorrect email</span>';
-				error = true;
+				isFormValid = false;
 			}
 		}
-		return error;
+		return isFormValid;
 	}
 
-	function emailTest(input) {
-		return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
-	}
+
 });
-
-
 
 
 
@@ -220,6 +248,9 @@ function validate(e) {
 			valid = false;
 		}
 	}
+
+	СКОПИРОВАЛА
+	/^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i.test(String(emailField.value).toLowerCase()))
 
 	if (false == valid) {
 		e.preventDefault();
