@@ -44,8 +44,8 @@ body {
 .container {
 	max-width: 1170px;
 	margin: 0 auto;
-	padding: 0 15px; /* чтобы не было прилипания при сжатии */
-	box-sizing: content-box; /* padding не будет учитываться */
+	padding: 0 15px; 
+	box-sizing: content-box; 
 }
 .list__item {
 	margin: 10px 0px 0px 0px;
